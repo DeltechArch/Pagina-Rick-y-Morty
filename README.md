@@ -1,2 +1,3 @@
 # Pagina-Rick-y-Morty
-una simple pagina consumiendo apis
+una simple pagina consumiendo apis...
+En esta paginas es la primera vez que consumire  API  utilizando Axios
