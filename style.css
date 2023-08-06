@@ -1,34 +1,37 @@
-body{
+html{
+    box-sizing: border-box;
+}
+body {
     background-color: black;
+    
 }
 .titulo{
-    text-align: center;
     color: white;
-    background-color:rgb(105, 101, 101) ;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    text-align: center;
 }
-#personajes-container{
+.container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin:0 10px 0 10px;
-    
-
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+    /* Espacio entre las columnas */
 }
-#personajes-container article{
+.container article{
+    background-color: white;
     padding: 10px;
-    background-color: rgb(105, 101, 101);
-    overflow: hidden;
-}
+    margin: 0 5px 0 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    gap: 3px;
 
-#personajes-container article div img{
-    width: 100%;
-    min-width: 200px;
-    border-radius: 20px;
+
 }
-#personajes-container article div img:hover{
-    transform: scale(1.2);
-    border-radius: 0;
+.container article img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+.container article div{
+    background-color: rgb(244, 219, 180);
+    padding: 5px;
+    height: auto;
 }
